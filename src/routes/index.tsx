@@ -18,7 +18,7 @@ export const Route = createFileRoute('/')({
   component: Portfolio,
 });
 
-const navigation = [['Home', 'home'], ['About', 'about'], ['Education', 'education'], ['Skills', 'skills'], ['Projects', 'projects'], ['Achievements', 'achievements']];
+const navigation: [string, string][] = [['Home', 'home'], ['About', 'about'], ['Education', 'education'], ['Skills', 'skills'], ['Projects', 'projects'], ['Achievements', 'achievements']];
 const skills = [ { symbol: 'C', name: 'C', detail: 'Programming fundamentals' }, { symbol: 'C++', name: 'C++', detail: 'Object-oriented programming' }, { symbol: 'Py', name: 'Python', detail: 'Scripting & problem solving' }, { symbol: '{ }', name: 'Data Structures', detail: 'Building the basics' }, { symbol: '</>', name: 'Web Development', detail: 'Crafting for the web' } ];
 function SectionHeading({ number, title, description }: { number: string; title: string; description?: string }) {
   return <div className="section-heading"><span className="section-number">{number} /</span><div><h2>{title}</h2>{description && <p>{description}</p>}</div></div>;
